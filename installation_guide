@@ -1,0 +1,16 @@
+Firstly, all necessary python libraries need to be installed.
+We recommend using virtualenv (https://virtualenv.pypa.io/en/latest/installation.html)
+After virtualenv is installed, an instance of virtual environment should be created for the project by running
+"virtualenv envname", where envname is the name you choose.
+Activate your virtual environment with "source envname/bin/activate"
+Run "pip install -r requirements.txt" to install python dependencies
+Run "pip install notebook"  to install Jupyter Notebook
+After this, your environment should be set. Each time you want to run code from this project,
+ you must activate your virtual environment with "source envname/bin/activate".
+
+Next, you will need to access data and models here
+https://drive.google.com/drive/folders/1POb9Sz19ysRy44bVn2t2B5fecFXqe7nB?usp=sharing
+You should unzip folders "data" and "models" in the root directory of the project, next to "src/", "notebooks/" etc.
+
+When you run the code for the project for the first time, run the setup script (remember, virtualenv should be active)
+with "python setup_paths.py data" where "data" is the name of the data folder (by default, it should be just "data").
